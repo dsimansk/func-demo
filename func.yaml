@@ -1,0 +1,12 @@
+# $schema: https://raw.githubusercontent.com/knative/func/main/schema/func_yaml-schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/knative/func/main/schema/func_yaml-schema.json
+specVersion: 0.36.0
+name: func-demo-3
+runtime: go
+registry: image-registry.openshift-image-registry.svc:5000/func-demo
+namespace: func-demo
+created: 2026-07-15T16:07:12.466144+02:00
+run:
+  envs:
+  - name: key
+    value: value
